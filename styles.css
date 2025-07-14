@@ -1,0 +1,112 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-50: hsl(330, 100%, 98%);
+  --rose-800: hsl(332, 51%, 32%);
+}
+
+body {
+  font-family: 'Young-Serif', 'sans';
+  background-color: var(--stone-100);
+}
+
+.recipe-container {
+  display: grid;
+  place-items: center;   
+}
+
+.recipe-card {
+  border: 2px solid var(--white);
+  border-radius: 0.5rem;
+  padding: clamp(1rem, 4vw, 2rem);
+  background-color: var(--white);
+  max-width: 35rem;
+  margin-block: clamp(1.5rem, 5vw, 3rem);
+}
+
+.recipe-card__img {
+  width: 100%;
+  height: auto;
+}
+  
+.recipe-card__title {
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 2.5rem);
+  font-weight: 800;  
+  margin-block-end: 0.5rem;
+}
+
+.recipe-card__description {
+  color: var(--stone-900);    
+  font-size: clamp(0.65rem, 1vw + 0.2rem, 0.85rem);
+}
+
+.recipe-card__description, .recipe-card__preperation, .recipe-card__ingredients ul, .recipe-card__instructions ol, .recipe-card__nutrition {
+  font-family: 'Outfit', 'sans-serif';
+}
+
+.recipe-card__preperation {
+  background-color: var(--rose-50);  
+  padding: clamp(0.175rem, 1vw, 0.25rem) 0 clamp(0.175rem, 1vw, 0.25rem) clamp(1rem, 4vw, 1.5rem);
+}
+
+.recipe-card__preperation ul, .recipe-card__ingredients ul, .recipe-card__instructions ol  {
+  padding-left: clamp(0.9rem, 3vw, 1.1rem);
+}
+
+.recipe-card__preperation li, .recipe-card__ingredients li, .recipe-card__instructions li {
+  margin-bottom: clamp(0.5rem, 1vw, 1rem);
+}
+
+.recipe-card__preperation-title {
+  color: var(--rose-800);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);  
+  font-weight: 700;
+  font-family: 'Outfit', 'sans-serif';
+  margin-bottom: 0.5rem;
+}
+
+.recipe-card__ingredients h2, .recipe-card__instructions h2, .recipe-card__nutrition h2 {
+  color: var(--brown-800);  
+}
+
+.recipe-card__instructions ::marker {
+  color: var(--brown-800);
+  font-weight: 800;
+}
+
+.recipe-card__nutrition-description {
+  font-size: clamp(0.75rem, 1vw, 0.85rem);
+}
+
+.nutrition-table {
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nutrition-table tr {
+  border-bottom: 1px solid var(--stone-100);
+}
+  
+.nutrition-table th, .nutrition-table td {
+  padding: clamp(0.25rem, 1vw, 0.5rem) clamp(0.5rem, 4vw, 1.75rem);         
+}
+  
+.nutrition-table th {   
+  font-weight: 400;         
+}
+  
+.nutrition-table td {            
+  color: var(--brown-800);   
+  font-weight: 700; 
+}
+
+.recipe-card__divider {
+  border: none;
+  border-top: 1px solid var(--stone-100);
+  margin: clamp(1rem, 4vw, 2rem) 0;
+}
