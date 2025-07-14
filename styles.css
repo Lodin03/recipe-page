@@ -58,7 +58,7 @@ body {
 }
 
 .recipe-card__preperation li, .recipe-card__ingredients li, .recipe-card__instructions li {
-  margin-bottom: clamp(0.5rem, 1vw, 1rem);
+  margin-block-end: clamp(0.5rem, 1vw, 1rem);
 }
 
 .recipe-card__preperation-title {
@@ -66,7 +66,7 @@ body {
   font-size: clamp(0.9rem, 2vw, 1.1rem);  
   font-weight: 700;
   font-family: 'Outfit', sans-serif;
-  margin-bottom: 0.5rem;
+  margin-block-end: clamp(0.25rem, 1vw, 0.5rem);
 }
 
 .recipe-card__ingredients h2, .recipe-card__instructions h2, .recipe-card__nutrition h2 {
