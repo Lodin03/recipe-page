@@ -9,8 +9,8 @@
 ## Overview
 
 ### Screenshot
-![Omelette Recipe Preview 1](assets/images/webpage_screenshot1.png)  
-![Omelette Recipe Preview 2](assets/images/webpage_screenshot2.png)
+![Omelette Recipe Preview 1](assets/images/webpage-screenshot1.png)  
+![Omelette Recipe Preview 2](assets/images/webpage-screenshot2.png)
 
 ### Links
 - Solution URL: [GitHub Repository](https://github.com/Lodin03/recipe-page)
